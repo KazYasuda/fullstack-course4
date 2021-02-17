@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>The Box Model</title>
-<style>
+  <meta charset="utf-8">
+  <title>The Box Model</title>
+  <style>
+    
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-  background-color: gray;
-}
 
-#box {
-  background-color: blue;
-}
-#content {
-  background-color: #90EE90; /*green*/
-}
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: gray;
+    }
 
-h1 {
-  margin-bottom: 30px;
-}
+    #box {
+      background-color: blue;
+      padding: 10px;
+      border: 5px solid black;
+      /* margin: 40px; */
+      margin-top: 20px;
+      height: 50px;
+      width: 300px;
+      overflow: scroll;
+    }
 
-</style>
+    #content {
+      background-color: #90EE90;
+      /*green*/
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+  </style>
 </head>
+
 <body>
 
-<h1>Box Model</h1>
+  <h1>Box Model</h1>
 
-<div id="box">
-  <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
-</div>
+  <div id="box">
+    <div id="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed consectetur dolore totam dolores vero fuga facilis tenetur deleniti. Ipsum alias asperiores nemo aliquam explicabo pariatur ex perspiciatis iste ab velit?</div>
+  </div>
 
 
 </body>
+
 </html>
-
-
-
-
